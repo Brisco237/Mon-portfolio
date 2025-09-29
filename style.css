@@ -1,0 +1,25 @@
+body .container-fluid{
+	font-family: 'Poppins', Arial, sans-serif;
+}
+.container-fluid h1, h2, h3, h4, h5, h6 {
+	font-family: 'Space Grotesk', Arial, sans-serif;
+}
+.nav-item{
+    padding: 15px;
+}
+.nav-item #contact{
+    background-color: rgb(10, 204, 204);
+    color: #F5F6FA;
+    border: none;
+    padding: 10px;
+}
+#home-section p{
+    font-size: 1rem;
+}
+
+#home-section button{
+    background-color: rgb(10, 204, 204);
+    color: #F5F6FA;
+    border: none;
+    padding: 15px;
+}
