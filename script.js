@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#aboutme", {
+gsap.to('', {
     scrollTrigger: {
-      trigger: "#aboutme-photo",
+      trigger: "",
       start: "right 80%", // déclenche quand la box arrive à 80% de la fenêtre
       toggleActions: "play none none reverse"
     },
@@ -14,13 +14,4 @@ gsap.to("#aboutme", {
     y: -50,
     duration: 3
 });
-gsap.to("#home-section", {
-    scrollTrigger: {
-      trigger: "#home-section",
-      start: "bottom 50%", // déclenche quand la box arrive à 80% de la fenêtre
-      toggleActions: "play none none reverse"
-    },
-    opacity: 1,
-    y: -50,
-    duration: 3
-});
+
