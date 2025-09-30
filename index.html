@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- Google Fonts: Space Grotesk & Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="script.js" defer></script>
     <title>Kamdem || Dev Fullstack </title>
 </head>
 <body>
@@ -26,19 +25,19 @@
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house"></i> Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#aboutme">About me</a>
+                                    <a class="nav-link" href="#aboutme"><i class="fa-solid fa-user"></i> About me</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#skills">Skills</a>
+                                    <a class="nav-link" href="#skills"><i class="fa-solid fa-gear"></i> Skills</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#projects">Projects</a>
+                                    <a class="nav-link" href="#projects"><i class="fa-solid fa-briefcase"></i> Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact" id="contact">Contact</a>
+                                    <a class="nav-link" href="#contact" id="contact"><i class="fa-solid fa-phone"></i> Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -48,12 +47,12 @@
         </div>
         <div class="row text-center" id="home-section">
             <div class="col-md-12">
-                <h1 id="element">Hello, my name is Kamdem Brice I' am a Fullstack web developper.</h1>
+                <h1 id="element">Hello, my name is Kamdem Brice I' am a Fullstack web developper</h1>
                 <p class="text-secondary p-3 mt-1">
                     Passionate about building modern web applications with Django,
                     JavaScript, and Bootstrap. Turning ideas into robust and scalable digital experiences.
-                </p>
-                <button>View projects</button> <button>Contact me now </button>
+                </p> 
+                <button>View projects <i class="fa-solid fa-briefcase"></i></button> <button>Contact me now <i class="fa-solid fa-phone"></i></button>
             </div>
         </div>
         <div class="row" id="aboutme">
@@ -66,7 +65,7 @@
             </div>
             <div class="col-md-7" id="aboutme-text">
                 <div class="titre mt-5">
-                    <i class="fa-solid fa-user" id="icone-titre"></i><h2>About me</h2>
+                    <i class="fa-solid fa-user" id="icone-titre"></i><h2 data-aos="fade-up">About me</h2>
                 </div>
                 <p class="description mt-3">
                    I'm a passionate software developer with a strong 
@@ -80,17 +79,17 @@
                 </p>
                 <div class="titre mt-5"><i class="fa-solid fa-gear" id="icone-titre"></i><h2>Skills</h2></div>
                 <div class="languages mt-2">
-                    <img src="images/html.png" alt="">
-                    <img src="images/css.png" alt="">
-                    <img src="images/js.png" alt="">
-                    <img src="images/django.png" alt="">
-                    <img src="images/git.png" alt="">
-                    <img src="images/github.png" alt="">
-                    <img src="images/vscode.png" alt="">
+                    <img src="images/html.png">
+                    <img src="images/css.png">
+                    <img src="images/js.png">
+                    <img src="images/django.png">
+                    <img src="images/git.png">
+                    <img src="images/github.png">
+                    <img src="images/vscode.png">
                 </div>
                 <div class="titre mt-5"><i class="fa-solid fa-bucket" id="icone-titre"></i><h2>Experiences</h2></div>
                 <div class="experience1 mt-2">
-                    <i class="fa-solid fa-wifi fa-2x"></i>
+                     <i class="fa-solid fa-wifi fa-2x"></i>
                     <p>Tech Innovators Inc. <br> Software Developer</p>
                 </div>
                 <div class="experience1 mt-2">
@@ -99,20 +98,65 @@
                 </div>
             </div> 
         </div>
-        <div class="row text-center mt-5" id="skills">
-            <div class="col-md-12">
-                <h1>Skills & Technologies</h1>
+        <div class="row mt-5" id="skills">
+            <div class="row text-center mt-5" id="skills">
+                <div class="col-md-12">
+                    <h1>Skills & Technologies</h1>
+                </div>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <h5>I'm passionate about new technologies and constantly expanding my skill 
-                    set. Here's a glimpse of my current expertise:</h5>
+            <div class="row text-center mt-2">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p>I'm passionate about new technologies and constantly expanding my skill
+                        set. Here's a glimpse of my current expertise:</p>
+                </div>
+                <div class="col-md-2"></div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="row text-center mt-5">
+                <div class="col-md-12">
+                    <h3>Core technologies</h3>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <div class="card text-center p-4">
+                        <img src="images/html.png" class="card-img-top" alt="HTML5">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center p-4">
+                        <img src="images/css.png" class="card-img-top" alt="HTML5">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center p-4">
+                        <img src="images/js.png" class="card-img-top" alt="HTML5">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center p-4">
+                        <img src="images/git.png" class="card-img-top" alt="HTML5">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center p-4">
+                        <img src="images/github.png" class="card-img-top" alt="HTML5">
+                        <div class="card-title">Front end tools</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center p-4">
+                        <img src="images/vscode.png" class="card-img-top" alt="HTML5">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-<script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+
+
+<!-- bootstrap js-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+<!--typeit js -->
+<script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js" defer></script>
 </html>
