@@ -46,6 +46,7 @@ body .container-fluid{
     border: none;
     padding: 15px;
     border-radius: 5px;
+    font-family: "Space Grotesk";
 }
 #home-section button:hover{
     background-color: rgb(240, 240, 240);
@@ -109,3 +110,22 @@ body .container-fluid{
 /* Skills section */
 
 /* Skills section */
+
+/* Projects section */
+#projects #btn1{
+    font-family: "Space Grotesk";
+    color: white;
+    border: none;
+    background-color:rgb(10, 204, 204);
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+#projects #btn2{
+    background-color:rgb(209 213 219);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Projects section */
