@@ -163,14 +163,45 @@ body .container-fluid{
     background: linear-gradient(to bottom, rgb(10, 204, 204), rgb(155, 186, 207));
     color:white;
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 #footer #links-footer a{
     text-decoration: none;
     color: white;
+    padding: 2px;
+}
+#footer #links-footer a:hover{
+    font-size: 1rem;
+    padding: 10px;
+    color: rgb(10, 204, 204);
+    background-color: #F5F6FA;
+    border-radius: 10px;
+    transition: linear 0.3s;
 }
 #footer #links-footer{
     display: flex;
     flex-direction: column;
 }
+#footer #titre-footer{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 30px;
+}
+#footer #social-network a img {
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+#footer #social-network a:hover img {
+    transform: scale(1.20) rotate(-8deg);
+}
 /* Footer section */
+
+/* La taille de la scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 10px; 
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(10, 204, 204), rgb(155, 186, 207));
+}
