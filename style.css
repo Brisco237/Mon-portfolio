@@ -1,9 +1,7 @@
-
 body .container-fluid{
 	font-family: 'Space Grotesk', Arial, sans-serif;
 }
 .navbar-nav .nav-item a{
-    font-weight: bolder;
     font-family: "Space Grotesk";
 }
 .navbar-nav .nav-item a:hover{
@@ -28,7 +26,7 @@ body .container-fluid{
     border:1px solid rgb(10, 204, 204);
 }
 #home-section{
-    height:40vh;
+    height:60vh;
     margin-top:100px;
 }
 #home-section p{
@@ -104,6 +102,9 @@ body .container-fluid{
 /* Skills section */
 
 /* Projects section */
+#projects{
+    margin-top: 160px;
+}
 #projects #btn1{
     font-family: "Space Grotesk";
     color: white;
@@ -127,3 +128,49 @@ body .container-fluid{
     border-radius: 5px;
 }
 /* Projects section */
+
+/* Contact section */
+#contact-section{
+    margin-top:100px;
+    margin-left: 10px;
+}
+#contact-section form{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+#contact-section form input{
+    padding: 15px;
+    margin: 10px;
+    outline-color: rgb(10, 204, 204);
+}
+#contact-section form textarea{
+    margin: 10px;
+    padding: 15px;
+    outline-color: rgb(10, 204, 204);
+}
+#contact-section form button{
+    padding: 15px;
+    margin: 10px;
+    background-color: rgb(10, 204, 204);
+    border: none;
+    color: white;
+}
+/* Contact section */
+
+/* Footer section */
+#footer{
+    background: linear-gradient(to bottom, rgb(10, 204, 204), rgb(155, 186, 207));
+    color:white;
+    padding: 10px;
+    margin-top: 150px;
+}
+#footer #links-footer a{
+    text-decoration: none;
+    color: white;
+}
+#footer #links-footer{
+    display: flex;
+    flex-direction: column;
+}
+/* Footer section */
