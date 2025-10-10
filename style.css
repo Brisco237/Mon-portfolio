@@ -42,7 +42,7 @@ body .container-fluid{
     background-color: rgb(240, 240, 240);
     color: rgb(10, 204, 204);
     padding: 15px;
-    border: 1px solid rgb(10, 204, 204);
+    box-shadow: 1px 2px 20px rgb(10, 204, 204);
     transition:linear 0.5s;
 }
 /* aboutme section */
@@ -52,20 +52,20 @@ body .container-fluid{
     margin-right: 5px;
 }
 #aboutme #img-profile{
-    width:100px;
-    border: 1px dashed rgb(10, 204, 204);
+    width:100%;
     border-radius: 50%;
 }
 #aboutme-photo{
-    border-radius:15px;
+    border-radius:10px;
     border: 1px solid rgb(10, 204, 204);
+    box-shadow: 1px 1px 30px rgb(10, 204, 204);
 }
 #aboutme-photo #img-profile{
     margin-top: 30px;
 }
 #aboutme-photo .sub-name{
     font-weight: bold;
-    margin-top:10px;
+    margin-top:30px;
     color: rgb(10, 204, 204);
 }
 #aboutme-text .description{
@@ -119,6 +119,7 @@ body .container-fluid{
     color: rgb(10, 204, 204);
     transition: linear 0.3s;
     border: 1px solid rgb(10, 204, 204);
+    box-shadow: 1px 2px 20px rgb(10, 204, 204);
 }
 #projects #btn2{
     background-color:rgb(209 213 219);
@@ -142,7 +143,7 @@ body .container-fluid{
 #contact-section form input{
     padding: 15px;
     margin: 10px;
-    outline-color: rgb(10, 204, 204);
+    outline-color: rgb(139, 226, 226);
 }
 #contact-section form textarea{
     margin: 10px;
@@ -155,6 +156,13 @@ body .container-fluid{
     background-color: rgb(10, 204, 204);
     border: none;
     color: white;
+}
+#contact-section form button:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(10, 204, 204);
+    transition: linear 0.2s;
+    box-shadow: 1px 2px 20px rgb(10, 204, 204);
+
 }
 /* Contact section */
 
@@ -172,19 +180,12 @@ body .container-fluid{
 }
 #footer #links-footer a:hover{
     font-size: 1rem;
-    padding: 10px;
-    color: rgb(10, 204, 204);
-    background-color: #F5F6FA;
-    border-radius: 10px;
+    color: black;
     transition: linear 0.3s;
 }
 #footer #links-footer{
     display: flex;
     flex-direction: column;
-}
-#footer #titre-footer{
-    border-bottom: 2px solid rgb(255, 255, 255);
-    width: 30px;
 }
 #footer #social-network a img {
     transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);

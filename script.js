@@ -14,4 +14,3 @@ gsap.to('', {
     y: -50,
     duration: 3
 });
-
