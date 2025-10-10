@@ -1,5 +1,6 @@
 body .container-fluid{
 	font-family: 'Space Grotesk', Arial, sans-serif;
+    background: linear-gradient(to left, rgb(110, 110, 110), rgb(209 213 219));
 }
 .navbar-nav .nav-item a{
     font-family: "Space Grotesk";
@@ -64,9 +65,9 @@ body .container-fluid{
     margin-top: 30px;
 }
 #aboutme-photo .sub-name{
-    font-weight: bold;
+    font-weight: bolder;
     margin-top:30px;
-    color: rgb(10, 204, 204);
+    color: rgb(0, 0, 0);
 }
 #aboutme-text .description{
     text-align:left;
@@ -143,12 +144,12 @@ body .container-fluid{
 #contact-section form input{
     padding: 15px;
     margin: 10px;
-    outline-color: rgb(139, 226, 226);
+    outline:none;
 }
 #contact-section form textarea{
     margin: 10px;
     padding: 15px;
-    outline-color: rgb(10, 204, 204);
+    outline:none;
 }
 #contact-section form button{
     padding: 15px;
@@ -168,7 +169,7 @@ body .container-fluid{
 
 /* Footer section */
 #footer{
-    background: linear-gradient(to bottom, rgb(10, 204, 204), rgb(155, 186, 207));
+    background: linear-gradient(to top, rgb(10, 204, 204), rgb(155, 186, 207));
     color:white;
     padding: 10px;
     margin-top: 100px;
@@ -187,10 +188,14 @@ body .container-fluid{
     display: flex;
     flex-direction: column;
 }
-#footer #social-network a img {
+#footer #social-network a{
+    color: #ffffff;
+    padding: 5px;
+}
+#footer #social-network a i{
     transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
 }
-#footer #social-network a:hover img {
+#footer #social-network a:hover i {
     transform: scale(1.20) rotate(-8deg);
 }
 /* Footer section */
