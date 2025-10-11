@@ -56,7 +56,7 @@
                     🎨 Mon objectif : allier design, technologie et expérience utilisateur.
                     📩 Découvre mes projets et n’hésite pas à me contacter !
                 </h6> 
-                <div class="btn-homesection" data-aos="fade-left" data-aos-duration="3000">
+                <div class="btn-homesection">
                     <a href="#projects">View projects <i class="fa-solid fa-briefcase"></i></a> 
                     <a href="#contact-section">Contact me now <i class="fa-solid fa-phone"></i></a>
                 </div>
@@ -136,7 +136,7 @@
                 </div> 
             </div>
         </div>
-        <div class="row mt-5" id="skills" data-aos="fade-left" data-aos-duration="3000">
+        <div class="row mb-3 mt-5 bg-light pb-5" id="skills" data-aos="fade-left" data-aos-duration="3000">
             <div class="row text-center mt-5" id="skills">
                 <div class="col-md-12">
                     <h1>SKILLS & TECHNOLOGIES 🎯</h1><br>
@@ -158,12 +158,51 @@
                     <img src="images/figma.jfif">
                     <img src="images/python.png">
                     <img src="images/react.png">
+                    <img src="images/postgresql.png">
+                    <img src="images/postman.png">
+                </div>
+            </div>
+            <div class="row text-center mt-5" data-aos="fade-up" data-aos-duration="2500">
+                <h3>< Mes services /></h3>
+                <p>Ce que je peux faire pour vous.</p>
+                <div class="col-md-4 mb-1 mt-5">
+                    <div class="card p-3">
+                        <i class="fa-solid fa-server fa-3x  mb-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Développement Backend Django</h5>
+                            <p class="card-text text-muted">
+                                Création d’applications web puissantes et sécurisées avec Django, PostgreSQL et JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-1 mt-5">
+                    <div class="card p-3">
+                        <i class="fa-solid fa-code fa-3x text-success mb-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Intégration Front-end</h5>
+                            <p class="card-text text-muted">
+                                Réalisation d’interfaces modernes et responsives avec HTML, CSS, Bootstrap et JavaScript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-1 mt-5">
+                    <div class="card p-3">
+                        <i class="fa-solid fa-database fa-3x text-warning mb-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Base de Données & Optimisation</h5>
+                            <p class="card-text text-muted">
+                                Conception, optimisation et sécurisation de bases de données avec PostgreSQL et SQLite.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row" id="projects">
             <div class="col-md-12 text-center" data-aos="fade-up" data-aos-duration="3000">
-                <h1>PROJECTS SHOWCASE 😎</h1><br>
+                <h1>PROJECTS SHOWCASE</h1><br>
                 <h6>Explore a selection of projects demonstrating expertise in Django, 
                     JavaScript, and Bootstrap, with a focus on innovative solutions and 
                     user-centric design.</h6>
@@ -207,6 +246,45 @@
                 </div>
             </div>
         </div>
+        <div class="container text-center mt-5">
+            <section id="testimonials" class="p-5 bg-light" data-aos="fade-right" data-aos-duration="2000">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold">Témoignages</h2>
+                        <p class="text-muted">Ce que disent mes collaborateurs et clients</p>
+                    </div>
+                    <div class="row g-4">
+                        <!-- Témoignage 1 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0 text-center p-4">
+                                <img src="images/profile.png" class="rounded-circle mx-auto mb-3 img-fluid">
+                                <p class="text-muted">"Brice a développé mon site avec professionnalisme et créativité. Il comprend
+                                    vite et livre dans les délais !"</p>
+                                <h6 class="fw-bold mb-0">– Mr Sirkoulou sylvestre, artiste dessinateur</h6>
+                            </div>
+                        </div>
+                        <!--Témoignage 2 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0 text-center p-4">
+                                <img src="images/profile.png" class="rounded-circle mx-auto mb-3 img-fluid">
+                                <p class="text-muted">"Excellente communication et qualité du code. Je recommande pour tout projet
+                                    Django ou web design."</p>
+                                <h6 class="fw-bold mb-0">– Mr Kamdem boris, Ingénieur Btp/entrepreneur</h6>
+                            </div>
+                        </div>
+                        <!-- Témoignage 3 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0 text-center p-4">
+                                <img src="images/profile.png" class="rounded-circle mx-auto mb-3 img-fluid">
+                                <p class="text-muted">"Brice a su donner vie à mes idées. Mon portfolio est aujourd’hui bien plus
+                                    professionnel grâce à lui."</p>
+                                <h6 class="fw-bold mb-0">– Léa Singheu, designer</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="container-fluid text-center" id="contact-section" >
             <div class="row">
                 <div class="col-md-7 col-sm-12" data-aos="fade-left" data-aos-duration="3000">
@@ -216,16 +294,17 @@
                         creative ideas, or opportunities to be part
                         of your visions. Feel free to reach out, and let's
                         explore how we can collaborate.</p>
-                    <form>
-                        <input type="text" name="username" id="username" placeholder="Your name">
-                        <input type="text" name="email" id="email" placeholder="Your email">
-                        <textarea name="textarea" id="textarea" placeholder="Your Message"></textarea>
+                    <form id="contact-form">
+                        <input type="text" name="username" id="username" placeholder="Your name" required>
+                        <input type="text" name="email" id="email" placeholder="Your email" required>
+                        <textarea name="textarea" id="textarea" placeholder="Your Message" rows="5" required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
+                    <p id="response-msg" class="text-center mt-3"></p>
                 </div>
-                <div class="col-md-5 col-sm-12" data-aos="fade-right" data-aos-duration="3000">
+                <div class="col-md-5 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
                     <!-- Google Maps iframe pour Yaoundé, Cameroun -->
-                    <iframe src="https://www.google.com/maps?q=Yaound%C3%A9,+Cameroun&hl=fr&z=14&output=embed" width="100%" height="464" allowfullscreen="" ></iframe>
+                    <iframe src="https://www.google.com/maps?q=Yaound%C3%A9,+Cameroun&hl=fr&z=14&output=embed" width="100%" height="550px" allowfullscreen="" ></iframe>
                 </div>
             </div>
         </div>
@@ -258,17 +337,18 @@
                 <a href=""><i class="fa-2x fab fa-instagram"></i></a>
                 <a href=""><i class="fa-2x fab fa-github"></i></a>
                 <a href=""><i class="fa-2x fab fa-gitlab"></i></a>
-                <a href=""><i class="fa-2x fab fa-windows"></i></a>
+                <a href=""><i class="fa-2x fa-solid fa-gmail"></i></a>
             </div>
             <hr>
             <h6 class="text-center">&copy; Tous droits réservés.kamdem Brice 2025.</h6>
         </div>
     </div>
     <!-- Bouton retour en haut -->
-    <button onclick="topFunction()" id="btnTop" title="Retour en haut"><i class="fa-solid fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="btnTop" title="Retour en haut" data-aos="fade-up" data-aos-duration="3000"><i class="fa-solid fa-arrow-up"></i></button>
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 
 <!-- bootstrap js-->
