@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -209,7 +209,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-md-4 col-sm-6 text-center mb-2" data-aos="fade-left" data-aos-duration="3000">
-                    <div class="card p-3">
+                    <div class="card p-3 h-100">
                         <div class="card-img-top"><img src="images/projet1.JPG" class="img-fluid"></div>
                         <div class="card-title mt-4"><h5>Dynamic Web Application - Kama.blog</h5></div>
                         <div class="card-text">
@@ -221,7 +221,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 text-center mb-2" data-aos="fade-up" data-aos-duration="3000">
-                    <div class="card p-3">
+                    <div class="card p-3 h-100">
                         <div class="card-img-top"><img src="images/projet2.JPG" class="img-fluid"></div>
                         <div class="card-title mt-4"><h5>Web Application Pdf Listener - YOouk</h5></div>
                         <div class="card-text">
@@ -233,7 +233,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 text-center" data-aos="fade-right" data-aos-duration="3000">
-                    <div class="card p-3">
+                    <div class="card p-3 h-100">
                         <div class="card-img-top"><img src="images/figma.jfif" class="img-fluid"></div>
                         <div class="card-title mt-4"><h5>Drawing arts presentation</h5></div>
                         <div class="card-text">
@@ -299,8 +299,20 @@
                         <input type="text" name="email" id="email" placeholder="Your email" required>
                         <textarea name="textarea" id="textarea" placeholder="Your Message" rows="5" required></textarea>
                         <button type="submit">Send Message</button>
+                        <!--Spinner bootstrap-->
+                        <div id="loading-spinner" class="text-center mt-3" style="display:none;">
+                            <div class="spinner-border spinner-border-sm text-primary" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow spinner-grow-sm text-info" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-border spinner-border-sm text-primary" role="status">
+                                <span class="visually-hidden">Envoi en cours...</span>
+                            </div>
+                            <p class="mt-2 text-muted">Envoi en cours...</p>
+                        </div>
                     </form>
-                    <p id="response-msg" class="text-center mt-3"></p>
                 </div>
                 <div class="col-md-5 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
                     <!-- Google Maps iframe pour Yaoundé, Cameroun -->
@@ -337,10 +349,26 @@
                 <a href=""><i class="fa-2x fab fa-instagram"></i></a>
                 <a href=""><i class="fa-2x fab fa-github"></i></a>
                 <a href=""><i class="fa-2x fab fa-gitlab"></i></a>
-                <a href=""><i class="fa-2x fa-solid fa-gmail"></i></a>
+                <a href=""><i class="fa-2x fab fa-google"></i></a>
             </div>
             <hr>
             <h6 class="text-center">&copy; Tous droits réservés.kamdem Brice 2025.</h6>
+        </div>
+    </div>
+    <!--Popup ou Modal Bootstrap pour l'affichage de mes méssages d'érreur-->
+    <!-- ✅ Modal de confirmation -->
+    <div class="modal fade text-center" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="font-family:'Poppins';">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fa-solid fa-circle-check text-success fa-2x mb-2"></i><br>
+                    <p>Message envoyé avec success !</p>
+                    <p>Merci pour votre message. Je vous répondrai dès que possible 😊</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Bouton retour en haut -->
@@ -355,6 +383,8 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
 <!--typeit js -->
 <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js" defer></script>
+<!--Link my js page-->
 <script src="script.js" defer></script>
+<!-- Alpine Js-->
 
 </html>

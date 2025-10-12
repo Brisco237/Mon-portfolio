@@ -4,7 +4,7 @@ body .container-fluid{
     background: linear-gradient(to left, rgb(110, 110, 110), rgb(209 213 219));
 }
 .navbar-nav .nav-item a{
-    font-family: "Space Grotesk";
+    font-family: "Poppins";
 }
 .navbar-nav .nav-item a:hover{
     background-color: rgb(10, 204, 204);

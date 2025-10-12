@@ -15,22 +15,40 @@ function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-// Initialisation EmailJs
-(function() {
-  emailjs.init("Z-sibBF1XPC8DQpY-");
-})();
 
+// Initialise EmailJS
+emailjs.init("Z-sibBF1XPC8DQpY-");
+const form = document.getElementById("contact-form");
+const spinner = document.getElementById("loading-spinner");
 
-// Gestion de l'envoi du formulaire
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
+// Gestion du formulaire
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    // 🔵 1. Afficher le spinner
+    spinner.style.display = "block";
+    // 🔵 2. Désactiver le bouton d’envoi pour éviter les doubles clics
+    const submitBtn = form.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi...";
 
-    emailjs.sendForm('service_8yvk9cb', 'template_a3m5izb', this)
-        .then(function () {
-            document.getElementById('response-msg').innerText = "✅ Message envoyé avec succès !";
-        }, function (error) {
-            document.getElementById('response-msg').innerText = "❌ Une erreur s’est produite, réessaie.";
-            console.error('Erreur EmailJS:', error);
+    emailjs.sendForm("service_8yvk9cb", "template_a3m5izb", this)
+        .then(() => {
+            // ✅ Envoi réussi → cacher le spinner
+            spinner.style.display = "none";
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Envoyer";
+            // ✅ Si l'envoi réussit : afficher le modal
+            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+            successModal.show();
+            // Réinitialiser le formulaire
+            this.reset();
+        })
+        .catch((error) => {
+            console.error("Erreur :", error);
+            spinner.style.display = "none";
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Envoyer";
+            alert("Une erreur est survenue, veuillez réessayer.");
         });
 });
 
