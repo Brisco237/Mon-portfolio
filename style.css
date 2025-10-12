@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body .container-fluid{
 	font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(to left, rgb(110, 110, 110), rgb(209 213 219));
+    /*background: linear-gradient(to left, rgb(110, 110, 110), rgb(209 213 219));*/
 }
+/* home section */
 .navbar-nav .nav-item a{
     font-family: "Poppins";
+    color: white;
 }
 .navbar-nav .nav-item a:hover{
     background-color: rgb(10, 204, 204);
@@ -32,6 +34,8 @@ body .container-fluid{
 #home-section{
     height:60vh;
     margin-top:100px;
+    color: white;
+
 }
 #home-section p{
     font-size: 1rem;
@@ -49,11 +53,14 @@ body .container-fluid{
     box-shadow: 1px 2px 20px rgb(10, 204, 204);
     transition:linear 0.5s;
 }
+
 /* aboutme section */
 #aboutme{
     margin-top: 100px;
     margin-left:5px;
     margin-right: 5px;
+    color: white;
+
 }
 #aboutme #img-profile{
     width:100%;
@@ -70,7 +77,6 @@ body .container-fluid{
 #aboutme-photo .sub-name{
     font-weight: bolder;
     margin-top:30px;
-    color: rgb(0, 0, 0);
 }
 #aboutme-text .description{
     text-align:left;
@@ -108,29 +114,7 @@ body .container-fluid{
 /* Projects section */
 #projects{
     margin-top: 100px;
-}
-#projects #btn1{
-    font-family: "Space Grotesk";
     color: white;
-    border: none;
-    background-color:rgb(10, 204, 204);
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-#projects #btn1:hover{
-    background-color: rgb(240, 240, 240);
-    color: rgb(10, 204, 204);
-    transition: linear 0.3s;
-    border: 1px solid rgb(10, 204, 204);
-    box-shadow: 1px 2px 20px rgb(10, 204, 204);
-}
-#projects #btn2{
-    background-color:rgb(209 213 219);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
 }
 #testimonials{
     box-shadow: 1px 2px 20px rgb(10, 204, 204);
@@ -141,6 +125,7 @@ body .container-fluid{
 #contact-section{
     margin-top:100px;
     margin-left: 10px;
+    color: white;
 }
 #contact-section form{
     display: flex;
@@ -161,6 +146,7 @@ body .container-fluid{
     padding: 15px;
     margin: 10px;
     background-color: rgb(10, 204, 204);
+    font-weight: bolder;
     border: none;
     color: white;
 }
@@ -181,14 +167,10 @@ body .container-fluid{
     margin-top: 100px;
 }
 #footer #links-footer a{
+    text-transform: uppercase;
     text-decoration: none;
     color: white;
     padding: 2px;
-}
-#footer #links-footer a:hover{
-    font-size: 1rem;
-    color: black;
-    transition: linear 0.3s;
 }
 #footer #links-footer{
     display: flex;
@@ -231,7 +213,7 @@ body .container-fluid{
 
 /* La taille de la scrollbar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
   height: 10px; 
 }
 ::-webkit-scrollbar-track {
