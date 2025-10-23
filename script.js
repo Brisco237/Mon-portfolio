@@ -1,7 +1,29 @@
 // TypeIt js
 document.addEventListener("DOMContentLoaded", function () {
-    new TypeIt("#element", {}).go();
+    new TypeIt("#element", {
+        speed:90,
+        loop:true
+    })
+    .type("  Python(Django).")
+    .pause(2000)
+    .delete(null)
+    .type("  Css(Bootstrap, Tailwind).")
+    .pause(2000)
+    .delete(null)
+    .type("  Js(React, AlpineJs).")
+    .pause(2000)
+    .delete(null)
+    .type("Créateur De Solution web.")
+    .pause(2000)
+    .delete(null)
+    .type("Passionné D'innovation Et De Technologie Original.")
+    .pause(2000)
+    .delete(null)
+    .go();
 });
+
+
+
 // Bouton retour en haut
 let btnTop = document.getElementById("btnTop");
 window.onscroll = function() {scrollFunction()};
@@ -13,7 +35,7 @@ function scrollFunction() {
     }
 }
 function topFunction() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({top: 0, behavior:'smooth'});
 }
 
 
