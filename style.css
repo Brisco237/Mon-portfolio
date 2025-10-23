@@ -32,7 +32,7 @@ body .container-fluid{
     box-shadow: 1px 2px 20px rgb(10, 204, 204);
 }
 #home-section{
-    height:60vh;
+    height:90vh;
     margin-top:100px;
     color: white;
 
@@ -59,8 +59,8 @@ body .container-fluid{
     margin-top: 100px;
     margin-left:5px;
     margin-right: 5px;
+    padding-bottom:70px;
     color: white;
-
 }
 #aboutme #img-profile{
     width:100%;
@@ -221,4 +221,22 @@ body .container-fluid{
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, rgb(10, 204, 204), rgb(155, 186, 207));
+}
+@media screen and (max-width:600px){
+    #skills-section #technos img{
+        width:100px;
+        height:100px;
+    }
+}
+@media screen and (max-width:337px) {
+    #home-section .btn-homesection{
+        display: flex;
+        flex-direction: column;
+    }
+    #home-section .btn-homesection a{
+        margin-bottom:5px;
+    }
+    #home-section {
+        height:120vh;
+    }
 }
