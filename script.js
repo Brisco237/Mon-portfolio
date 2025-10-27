@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .type("Créateur De Solution web.")
     .pause(2000)
     .delete(null)
-    .type("Passionné D'innovation Et De Technologie Original.")
+    .type("Passionné D'innovation Et D'originalité.")
     .pause(2000)
     .delete(null)
     .go();
